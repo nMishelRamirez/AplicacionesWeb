@@ -1,33 +1,26 @@
-# Archivos y carpetas que deben ser ignorados por Git
+# Ignorar la carpeta target 
+target/
 
-# Compilados de Maven
-/target/
-/*.jar
-
-# Archivos de configuración del IDE
+# Ignorar configuraciones de IDEs como IntelliJ y Visual Studio Code
 .idea/
-/.vscode/
+.vscode/
 
-# Archivos de configuración de Eclipse
-/.project
-/.classpath
-/.settings/
+# Ignorar archivos temporales de Eclipse
+.project
+.classpath
+.settings/
 
-# Archivos de configuración de IntelliJ IDEA
-*.iml
-.idea/
-
-# Archivos de configuración de NetBeans
-nbproject/
-
-# Archivos temporales generados por el sistema operativo
+# Ignorar archivos temporales generados por el sistema operativo
 .DS_Store
 Thumbs.db
 
-# Archivos de logs
-*.log
-
-# Archivos temporales del sistema
+# Ignorar archivos temporales de editores de texto
 *.swp
 *.bak
 *.tmp
+*.log
+
+# Ignorar archivos y directorios generados por el sistema de construcción
+*.jar
+*.war
+*.ear
