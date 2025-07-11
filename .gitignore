@@ -1,26 +1,21 @@
-# Ignorar la carpeta target 
-target/
+# Ignorar la carpeta ClaseAPI/ completamente
+ClaseAPI/target/
+ClaseAPI/.settings/
 
-# Ignorar configuraciones de IDEs como IntelliJ y Visual Studio Code
-.idea/
-.vscode/
+# Ignorar configuraciones de IDE como IntelliJ y Visual Studio Code
+ClaseAPI/.idea/
+ClaseAPI/.vscode/
 
-# Ignorar archivos temporales de Eclipse
-.project
-.classpath
-.settings/
-
-# Ignorar archivos temporales generados por el sistema operativo
+# Ignorar archivos generados por el sistema operativo
 .DS_Store
 Thumbs.db
 
-# Ignorar archivos temporales de editores de texto
-*.swp
-*.bak
-*.tmp
-*.log
+# Ignorar archivos de compilación
+ClaseAPI/*.jar
+ClaseAPI/*.war
+ClaseAPI/*.ear
 
-# Ignorar archivos y directorios generados por el sistema de construcción
-*.jar
-*.war
-*.ear
+# Ignorar archivos de configuraciones de Eclipse
+ClaseAPI/.project
+ClaseAPI/.classpath
+ClaseAPI/.settings/
