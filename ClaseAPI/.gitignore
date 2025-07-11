@@ -1,0 +1,25 @@
+# Ignorar la carpeta de compilación generada por Maven
+target/
+
+# Ignorar archivos generados por IDEs
+.idea/
+*.iml
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos de configuración local de Maven (si existen)
+.settings/
+
+# Ignorar archivos de clase compilados
+*.class
+
+# Ignorar archivos temporales generados por editores
+*~
+
+# Ignorar archivos de configuración específicos de OS
+.DS_Store  # Para macOS
+Thumbs.db  # Para Windows
+
+# Ignorar directorios o archivos de pruebas generados
+*.bak
