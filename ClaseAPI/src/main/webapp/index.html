@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>README - Jakarta EE Publications API</title>
+  </head>
+  <body>
+    <h1>API de Publicaciones - Jakarta EE</h1>
+    <p>Desarollado por Mishel Ramirez</p>
+    
+    <h2>Descripción</h2>
+    <p>Este es un proyecto de ejemplo basado en Jakarta EE 8, que implementa una API RESTful para manejar publicaciones como libros y copias de libros (ítems de libros) utilizando JPA (Jakarta Persistence API) para gestionar la persistencia de datos.</p>
+
+    <h2>Requisitos</h2>
+    <ul>
+      <li>JDK 8 o superior y Maven 3 para compilar el proyecto.</li>
+      <li>Servidor Jakarta EE 8 WildFly para ejecutar la aplicación.</li>
+      <li>Base de datos PostgreSQL para almacenar los datos de los libros y copias de libros.</li>
+    </ul>
+
+    <h2>¿Cómo usar?</h2>
+    <ol>
+      <li>Clona o descarga el proyecto.</li>
+      
+      <li>Configura tu servidor Jakarta EE y despliega la aplicación.</li>
+      <li>Accede a los siguientes puntos finales de la API para realizar operaciones CRUD sobre libros y copias de libros:</li>
+      <ul>
+        <li><strong>GET /api/books</strong> - Obtiene la lista de todos los libros.</li>
+        <li><strong>POST /api/books</strong> - Crea un nuevo libro.</li>
+        <li><strong>PUT /api/books/{id}</strong> - Actualiza un libro existente.</li>
+        <li><strong>DELETE /api/books/{id}</strong> - Elimina un libro.</li>
+        <li><strong>POST /api/books/{id}/publish</strong> - Publica un libro.</li>
+        <li><strong>GET /api/book-items</strong> - Obtiene la lista de todas las copias de libros.</li>
+        <li><strong>POST /api/book-items</strong> - Crea una nueva copia de un libro.</li>
+      </ul>
+      <li>Prueba la API accediendo a los siguientes endpoints en el navegador o usando herramientas como Postman:</li>
+      <ul>
+        <li>Ejemplo de URL para libros: <code>http://<i>hostname</i>:<i>port</i>/api/books</code></li>
+        <li>Ejemplo de URL para copias de libros: <code>http://<i>hostname</i>:<i>port</i>/api/book-items</code></li>
+      </ul>
+    </ol>
+
+    <h2>Detalles Técnicos</h2>
+    <p>Esta aplicación usa la arquitectura RESTful para exponer las operaciones de la API de libros. Utiliza JPA para interactuar con la base de datos y gestiona las entidades relacionadas como:</p>
+    <ul>
+      <li><strong>Book</strong>: Representa un libro con campos como título, número de páginas y autor.</li>
+      <li><strong>BookItem</strong>: Representa una copia de un libro con un ISBN único.</li>
+      <li><strong>Author</strong>: Entidad asociada al libro que representa al autor.</li>
+    </ul>
+
+
+    <h2>¿Cómo funciona?</h2>
+    <ul>
+      <li>Al crear un nuevo libro, se persiste en la base de datos con un **ID autoincrementado** generado automáticamente.</li>
+      <li>Cada libro puede tener múltiples copias (ítems de libro), y cada copia tiene un **ISBN único**.</li>
+      <li>Se utilizan transacciones para garantizar que las operaciones de creación, actualización y eliminación de libros sean atómicas.</li>
+    </ul>
+    
+    <h2>Repositorio de GitHub</h2>
+    <p>Puedes acceder al código fuente del proyecto </p>
+    <p><a href="https://github.com/nMishelRamirez/AplicacionesWeb.git" target="_blank">https://github.com/nMishelRamirez/AplicacionesWeb.git</a></p>
+  </body>
+</html>
