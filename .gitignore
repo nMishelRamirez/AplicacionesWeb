@@ -1,0 +1,33 @@
+# Archivos y carpetas que deben ser ignorados por Git
+
+# Compilados de Maven
+/target/
+/*.jar
+
+# Archivos de configuración del IDE
+.idea/
+/.vscode/
+
+# Archivos de configuración de Eclipse
+/.project
+/.classpath
+/.settings/
+
+# Archivos de configuración de IntelliJ IDEA
+*.iml
+.idea/
+
+# Archivos de configuración de NetBeans
+nbproject/
+
+# Archivos temporales generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos temporales del sistema
+*.swp
+*.bak
+*.tmp
